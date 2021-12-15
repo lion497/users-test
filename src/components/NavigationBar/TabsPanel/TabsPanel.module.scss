@@ -1,0 +1,30 @@
+.tabs {
+  display: flex;
+  margin: 0 16px;
+  overflow: scroll;
+}
+
+.tabs::-webkit-scrollbar {
+  display: none;
+}
+
+%tab-item {
+  padding: 8px 12px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: color .5s, box-shadow .5s;
+  white-space: nowrap;
+}
+
+.tab_item {
+  @extend %tab-item;
+  color: #97979B;
+  font-weight: 500;
+}
+
+.tab_item_active {
+  @extend %tab-item;
+  color: #050510;
+  font-weight: 600;
+  box-shadow: inset 0px -2px 0px 0px #6534FF;
+}

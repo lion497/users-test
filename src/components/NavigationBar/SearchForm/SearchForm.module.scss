@@ -1,0 +1,220 @@
+.wrapper {
+  h1 {
+    box-sizing: border-box;
+    font-size: 24px;
+    padding: 12px 0 19px 12px;
+    font-weight: 700;
+  }
+}
+
+.wrapper_box {
+  display: flex;
+  align-items: center;
+
+  input {
+    width: calc(100% - 16px * 2);
+    margin: 6px 16px;
+    height: 40px;
+    background-color: #F7F7F8;
+    border: none;
+    border-radius: 16px;
+    padding: 0 44px;
+    caret-color: #6534FF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #C3C3C6;
+
+    &:focus {
+      color: #050510;
+    }
+  }
+}
+
+
+.search {
+  width: 24px;
+  position: absolute;
+  margin-left: 28px;
+
+  svg {
+    fill: #C3C3C6;
+  }
+}
+
+.filter {
+  margin-right: 28px;
+  right: 0;
+  cursor: pointer;
+  width: 24px;
+  position: absolute;
+
+  svg {
+    fill: #C3C3C6;
+  }
+}
+
+.Modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 50vh;
+  height: 192px;
+  outline: none;
+  background: #FFFFFF;
+  border-radius: 20px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(5, 5, 16, 0.16);
+}
+
+.header_filter {
+  position: relative;
+  display: flex;
+  height: 24px;
+  margin-top: 24px;
+
+  img {
+    margin: 0px 6.5px;
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.close_circle {
+  margin-left: auto;
+  margin-right: 30px;
+  background: #F7F7F8;
+  border-radius: 12px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.header_filter h3 {
+  margin: 0px -60px 0px auto;
+}
+
+.types_filter span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: flex-end;
+  padding-left: 10px;
+}
+
+.form_radio {
+  display: flex;
+  height: 20px;
+  margin-left: 18px;
+  margin-bottom: 40px;
+  margin-top: 36px;
+}
+
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label,
+input[type="radio"]:checked + label,
+input[type="radio"]:not(:checked) + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 28px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before,
+input[type="radio"]:checked + label:before,
+input[type="radio"]:not(:checked) + label:before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid #6534FF;
+  background-color: #ffffff;
+}
+
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+  border-radius: 2px;
+}
+
+input[type="radio"]:checked + label:before,
+input[type="radio"]:not(:checked) + label:before {
+  border-radius: 100%;
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after,
+input[type="radio"]:checked + label:after,
+input[type="radio"]:not(:checked) + label:after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+  left: 3px;
+  top: 4px;
+  width: 10px;
+  height: 5px;
+  border-radius: 1px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+input[type="radio"]:checked + label:after,
+input[type="radio"]:not(:checked) + label:after {
+  left: -1px;
+  top: -2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+  background-color: #FFFFFF;
+  border: 8px solid #6534FF;
+}
+
+input[type="checkbox"]:not(:checked) + label:after,
+input[type="radio"]:not(:checked) + label:after {
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked + label:after,
+input[type="radio"]:checked + label:after {
+  opacity: 1;
+}
+
+input[type="radio"]:not(:checked) {
+  display: none;
+}
+
+input[type="radio"]:checked {
+  display: none;
+}
+
+@media screen and (min-width: 20px) and (max-width: 1200px) {
+  .Modal {
+    margin-top: 45%;
+  }
+}

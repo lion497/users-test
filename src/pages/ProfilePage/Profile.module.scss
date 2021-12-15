@@ -1,0 +1,156 @@
+.wrapper {
+  display: block;
+  position: absolute;
+  inset: 0;
+  background-color: #FFFFFF;
+}
+
+.header {
+  display: block;
+  position: relative;
+  height: 280px;
+  background: #F7F7F8;
+
+  img {
+    height: 22px;
+    margin-left: 33px;
+    margin-top: 29px;
+  }
+}
+
+.info_profile {
+  display: block;
+  position: relative;
+  max-width: 480px;
+  margin-top: -15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  img {
+    height: 104px;
+    width: 104px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    filter: drop-shadow(0px 1px 5px rgba(22, 30, 52, 0.039)) drop-shadow(0px 8px 12px rgba(22, 30, 52, 0.08));
+    border-radius: 64px;
+  }
+}
+
+.nameProfile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 28px;
+  margin-top: 24px;
+}
+
+.department_profile {
+  display: block;
+  max-width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    text-align: center;
+    color: #55555C;
+    order: 1;
+    flex-grow: 0;
+    margin: 12px 0px;
+  }
+}
+
+.nameProfile {
+  h3 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #050510;
+    order: 0;
+    margin: 0px;
+    flex-grow: 0;
+  }
+
+  span {
+    align-self: flex-end;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 22px;
+    align-items: center;
+    color: #97979B;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px;
+    padding: 0px 10px;
+  }
+}
+
+.birthday {
+  display: flex;
+  height: 20px;
+  margin-top: 27px;
+}
+
+.number {
+  display: flex;
+  height: 20px;
+  margin-top: 48px;
+}
+
+.contacts_block {
+  padding: 0px 18px;
+
+  img {
+    max-width: 20px;
+    max-height: 20px;
+  }
+}
+
+.birthday p, .number a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  display: flex;
+  align-items: flex-end;
+  color: #050510;
+  flex: none;
+  order: 0;
+  align-self: center;
+  flex-grow: 0;
+  margin: 0px 14px;
+}
+
+.age {
+  text-align: right;
+  margin-left: auto;
+
+  p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: #97979B;
+  }
+}
+
+@media screen and (min-width: 20px) and (max-width: 1200px) {
+  .wrapper {
+    max-width: 1280px;
+  }
+
+  .info_profile {
+    height: auto;
+  }
+}

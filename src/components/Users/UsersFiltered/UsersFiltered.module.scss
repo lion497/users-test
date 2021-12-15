@@ -1,0 +1,38 @@
+.wrapper {
+  margin-top: 22px;
+  margin-left: 30px;
+}
+
+.divide_year {
+  height: 68px;
+  display: flex;
+
+  p {
+    font-style: normal;
+    font-weight: 500;
+    width: 160px;
+    height: 20px;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #C3C3C6;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 24px auto;
+    background-color: #FFFFFF;
+  }
+}
+
+.line {
+  position: static;
+  max-width: 508px;
+  height: 0px;
+  border-bottom: 1px solid #C3C3C6;
+  transform: rotate(180deg);
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+  margin: 34px 12px;
+}
+

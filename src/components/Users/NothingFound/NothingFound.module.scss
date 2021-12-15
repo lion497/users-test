@@ -1,0 +1,42 @@
+.wrapper {
+  img {
+    display: block;
+    width: 56px;
+    height: 56px;
+    margin: 0px auto;
+  }
+
+  max-width: 1280px;
+  margin: 18% auto;
+
+  h3 {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 22px;
+    text-align: center;
+    color: #050510;
+    margin-top: 8px;
+  }
+
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #97979B;
+    margin-top: 12px;
+  }
+
+  a {
+    display: block;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #6534FF;
+    margin-top: 12px;
+  }
+}
